@@ -1,0 +1,17 @@
+/* NAVIGATION MENU */
+
+#navigation{
+    background-color: #2c3e50;
+}
+#navigation img{
+    width: 32px;
+}
+#navigation .navbar-brand{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#navigationMenu .nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
