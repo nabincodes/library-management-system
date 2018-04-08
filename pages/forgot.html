@@ -64,64 +64,21 @@
 
     <!-- LOGIN PAGE -->
 
-    <div id="login">
+    <div id="reset">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
 
-                    <h2 class="title">USER LOGIN</h2>
+                    <h2 class="title">RESET YOUR PASSWORD</h2>
 
-                    <div id="loginPortal">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-link active">
-                                <a data-toggle="tab" href="#employee">EMPLOYEE</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" data-toggle="tab" href="#student">STUDENT</a>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content">
-                            <div id="employee" class="tab-pane fade show active">
-                                <form action="#" method="get">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Employee Username" id="employeeid">
-
-                                        <input class="form-control" type="password" placeholder="Employee Password" id="employeePassword">
-                                    </div>
-
-                                    <div class="buttons">
-                                        <input type="submit" class="btn btn-primary" value="Login">
-                                        <input type="reset" class="btn btn-primary" value="Reset">
-                                        <br/>
-                                        <br/>
-                                        <a href="forgot.html">Forgot Password?</a> |
-                                        <a href="register.html">Register a New User</a>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div id="student" class="tab-pane fade">
-                                <form action="#" method="get">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Student Username" id="studentid">
-
-                                        <input class="form-control" type="password" placeholder="Student Password" id="studentPassword">
-                                    </div>
-
-                                    <div class="buttons">
-                                        <input type="submit" class="btn btn-primary" value="Login">
-                                        <input type="reset" class="btn btn-primary" value="Reset">
-                                        <br/>
-                                        <br/>
-                                        <a href="forgot.html">Forgot Password?</a> |
-                                        <a href="register.html">Register a New User</a>
-                                    </div>
-                                </form>
-
-                            </div>
-
+                    <div id="password-reset">
+                        <p> <strong>Enter your email address to send you password reset link. Once you get the reset link, click on that link or paste in your browser to reset your password. </strong></p>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="resetPassword" id="resetPassword" placeholder="Your Email Address">
                         </div>
+                        <a href="email-confirmation.html"><button class="btn btn-primary" type="submit" value="resetPassword">Reset Password</button></a>
+                        <button class="btn btn-primary"  value="back" onclick="history.go(-1)">Back</button>
+                       
                     </div>
                 </div>
             </div>

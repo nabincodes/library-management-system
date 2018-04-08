@@ -76,7 +76,8 @@
 #employee input[type="text"],
 #employee input[type="password"], 
 #student input[type="text"],
-#student input[type="password"]{
+#student input[type="password"],
+#resetPassword{
     margin: 15px 0;
     font-weight: bold;
     color:#000000;
@@ -86,4 +87,12 @@
 #employee .buttons,
 #student .buttons{
     text-align: center;
+}
+
+/* FORGOT PASSWORD PAGE */
+#password-reset{
+    width: 60%;
+    margin: 0 auto;
+    padding:50px;
+    border:1px solid #e6e6e6;
 }
