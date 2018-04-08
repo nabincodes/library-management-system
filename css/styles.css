@@ -96,3 +96,39 @@
     padding:50px;
     border:1px solid #e6e6e6;
 }
+
+/* REGISTER PAGE */
+
+#register .title{
+    margin-bottom: 60px;
+}
+#userRegistration form{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.8);    
+    margin-bottom: 60px;
+}
+#userRegistration input{
+    color: #282828;
+    font-weight: bold;
+}
+#userRegistration .buttons{
+    text-align: center;
+}
+#userRegistration .buttons input,
+#userRegistration .buttons button, 
+input[type="submit"], 
+input[type="reset"],
+#password-reset button{
+    padding: 10px 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#userRegistration .form-check label{
+    font-weight: bold;
+    text-transform: uppercase;  
+    margin-right: 50px;
+}
