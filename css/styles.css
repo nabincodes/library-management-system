@@ -121,7 +121,8 @@
 #userRegistration .buttons button, 
 input[type="submit"], 
 input[type="reset"],
-#password-reset button{
+#password-reset button,
+#bookEntry .buttons button{
     padding: 10px 50px;
     color: #fff;
     text-transform: uppercase;
@@ -168,7 +169,7 @@ input[type="reset"],
 }
 
 #leftPanel-menu li a{
-    width:150px;
+    width:80%;
 }
 #leftPanel-menu li:first-child{
     margin-top:20px;
@@ -196,12 +197,28 @@ input[type="reset"],
 }
 
 
+/* NEW BOOK ENTRIES */
+#right-panel #bookEntry h3{
+    margin-bottom: 40px;
+}
+#right-panel #bookEntry .form-group{
+    display: flex;
+}
+#right-panel #bookEntry .form-group label{
+    width: 15%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bookEntry .buttons{
+    text-align: center;
+}
 
 
 /* RESPONSIVENESS */
 
 @media(min-width: 767px){
-    #left-panel{
+    /* #left-panel{
         width:180px;
-    }
+    } */
 }
