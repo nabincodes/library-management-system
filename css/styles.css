@@ -132,3 +132,76 @@ input[type="reset"],
     text-transform: uppercase;  
     margin-right: 50px;
 }
+
+
+/* EMPLOYEE SECTION */
+#left-panel, #right-panel{
+    margin-top: 50px;
+}
+
+#left-panel{
+    border: 2px solid #282828;
+    padding:10px;
+    text-align: center;
+}
+
+/* DASHBOARD */
+
+#employee-info .img-holder img{
+    width: 80px;
+}
+#employee-info .name{
+    font-weight: bold;
+}
+#employee-info:after {
+    content:"";
+    display: block;
+    margin:0 auto;
+    width: 25%;
+    padding-top:10px;
+    border-bottom: 4px solid black;
+}
+
+#leftPanel-menu li{
+    margin: 5px 0;
+
+}
+
+#leftPanel-menu li a{
+    width:150px;
+}
+#leftPanel-menu li:first-child{
+    margin-top:20px;
+}
+#leftPanel-menu li:last-child{
+    margin-top:150px;
+}
+
+/* RIGHT PANEL */
+
+#bookList .book{
+    display: flex;
+    margin-bottom: 20px;
+}
+#bookList .book-img img{
+    width: 60px;
+    margin-right: 10px;
+}
+#bookList .book-info p{
+    margin-bottom: 5px;
+}
+#bookList .book-info .name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+
+/* RESPONSIVENESS */
+
+@media(min-width: 767px){
+    #left-panel{
+        width:180px;
+    }
+}
