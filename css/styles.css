@@ -262,6 +262,32 @@ input[type="reset"],
 #users .modal-dialog{
     max-width: 60%;
 }
+
+
+/* STATUS SECTION */
+#status #right-panel h3:after{
+    content: "";
+    display: block;
+    margin: 0;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 4px solid black;
+}
+#books-status p{
+    font-size: 2em;
+}
+
+#books-status span{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
 /* RESPONSIVENESS */
 
 @media(min-width: 767px){
