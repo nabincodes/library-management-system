@@ -391,9 +391,14 @@ input[type="reset"],
 
 #setReminder .reminder{
     text-align: center;
+    padding:0 50px;   
 }
 #setReminder .reminder h4{
     margin-bottom: 50px;
+    font-weight: bolder;
+}
+#setReminder .reminder button{
+    padding: 10px 40px;
 }
 #setReminder .reminder .form-group{
     font-weight: bolder;
@@ -402,6 +407,8 @@ input[type="reset"],
     width: 80px;
     display: inline-block;
     color: #f39c12;
+    vertical-align: bottom;
+    padding: 10px;
 }
 
 
