@@ -386,6 +386,43 @@ input[type="reset"],
     font-style: italic;
     margin-left: 10px;
 }
+
+/* SET REMINDER */
+
+#setReminder .reminder{
+    text-align: center;
+}
+#setReminder .reminder h4{
+    margin-bottom: 50px;
+}
+#setReminder .reminder .form-group{
+    font-weight: bolder;
+}
+#setReminder .reminder input{
+    width: 80px;
+    display: inline-block;
+    color: #f39c12;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVENESS */
 
 @media(min-width: 767px){
