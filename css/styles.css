@@ -180,7 +180,7 @@ input[type="reset"],
 
 /* RIGHT PANEL */
 
-#bookList .book{
+#bookList .book, #users .user{
     display: flex;
     margin-bottom: 20px;
 }
@@ -188,10 +188,10 @@ input[type="reset"],
     width: 60px;
     margin-right: 10px;
 }
-#bookList .book-info p{
+#bookList .book-info p, #users .user-info p{
     margin-bottom: 5px;
 }
-#bookList .book-info .name{
+#bookList .book-info .name, #users .user-info .name{
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -218,6 +218,50 @@ input[type="reset"],
     margin-left: 50px;
 }
 
+/* USER ENQUIRY */
+#users{
+    padding-top: 30px;
+}
+#users .user-img img{
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.degree, .year-branch, .sem , .scholarNo{
+    font-weight: bold;
+}
+#users .user{
+    margin-bottom: 40px;
+}
+.student-info{
+    text-align: center;
+}
+.student-info .img img{
+    width: 200px;
+    border-radius: 50%;
+}
+.student-info .name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.student-info p{
+    margin-bottom: 5px;
+}
+.booksTaken{
+    margin-top:40px;
+}
+.booksTaken h4{
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+}
+.booksTaken #bookList{
+    text-align: left;
+}
+#users .modal-dialog{
+    max-width: 60%;
+}
 /* RESPONSIVENESS */
 
 @media(min-width: 767px){

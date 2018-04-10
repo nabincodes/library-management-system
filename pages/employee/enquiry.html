@@ -35,7 +35,7 @@
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                         <img src="../../images/logo.png" alt="logo">
                         <a class="navbar-brand" href="#">&nbsp; LIBRARY MANAGEMENT SYSTEM</a>
-                                               
+
                     </nav>
                 </div>
             </div>
@@ -52,64 +52,244 @@
                     <h2 class="title">ENQUIRY</h2>
 
                 </div>
-                    <div class="col-sm-2">
-                        <div id="left-panel">
-                            <div id="employee-info">
-                                <div class="img-holder">
-                                    <img src="../../images/user.png" alt="User">
+                <div class="col-sm-2">
+                    <div id="left-panel">
+                        <div id="employee-info">
+                            <div class="img-holder">
+                                <img src="../../images/user.png" alt="User">
+                            </div>
+                            <span class="name">Ashutosh Sharma</span>
+                            <br>
+                            <span class="post">Library Head</span>
+                        </div>
+
+                        <div id="leftPanel-menu">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="newEntries.html" class="btn btn-primary">New Entries</a>
+                                </li>
+                                <li>
+                                    <a href="updateBook.html" class="btn btn-primary">Update Book</a>
+                                </li>
+                                <li>
+                                    <a href="enquiry.html" class="btn btn-primary">Enquiry</a>
+                                </li>
+                                <li>
+                                    <a href="status.html" class="btn btn-primary">Status</a>
+                                </li>
+                                <li>
+                                    <a href="history.html" class="btn btn-primary">History</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html" class="btn btn-primary">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+                    <div id="right-panel">
+                        <div id="searchBook">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder=" nabin jaiswal">
+                            </div>
+                        </div>
+                        <div id="users">
+                            <!-- USER 1 -->
+                            <div class="user">
+                                <div class="user-img">
+                                    <img src="../../images/nabinjaiswal.jpg" alt="user">
                                 </div>
-                                <span class="name">Ashutosh Sharma</span>
-                                <br>
-                                <span class="post">Library Head</span>
+                                <div class="user-info">
+                                    <p class="name">Nabin Jaiswal</p>
+                                    <p>
+                                        <span class="degree">B.Tech</span> |
+                                        <span class="year-branch">Final Year ECE</span> |
+                                        <span class="sem">VII Sem</span> |
+                                        <span class="scholarNo">141114132</span>
+                                    </p>
+                                    <p>
+                                        <span class="booksTaken">
+                                            <strong>Books Taken:</strong> 3</span> |
+                                        <span class="lastVisited">
+                                            <strong>Last Visited date: </strong> 20th October 2017</span>
+                                    </p>
+
+                                </div>
+
+
+                                <div class="actions">
+                                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#userInfo">More Info</button>
+
+                                    <!-- User Modal -->
+                                    <div class="modal fade" id="userInfo" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <h4 class="modal-title">
+                                                        <strong>Student Detail</strong>
+                                                    </h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="student-info">
+                                                        <div class="img">
+                                                            <img src="../../images/nabinjaiswal.jpg" alt="student">
+                                                        </div>
+                                                        <div class="details">
+                                                            <p class="name">Nabin Jaiswal</p>
+                                                            <p>
+                                                                <span class="degree">B.Tech</span> |
+                                                                <span class="year-branch">Final Year ECE</span> |
+                                                                <span class="sem">VII Sem</span> |
+                                                                <span class="scholarNo">141114132</span>
+                                                            </p>
+                                                            <p>
+                                                                <span class="lastVisited">
+                                                                    <strong>Last Visited date: </strong>20th October 2017</span>
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="booksTaken">
+                                                            <h4>Books Taken:</h4>
+
+                                                            <div id="bookList">
+                                                                <div class="book">
+                                                                    <div class="book-img">
+                                                                        <img src="../../images/acs.jpg" alt="book">
+                                                                    </div>
+                                                                    <div class="book-info">
+                                                                        <p class="name">Advance Control Systems</p>
+                                                                        <p>
+                                                                            <span class="author">
+                                                                                <strong>Author:</strong> Dr. Sarkar B.N</span> |
+                                                                            <span class="published">
+                                                                                <strong>Published Date:</strong> 2015</span> |
+                                                                            <span class="edition">
+                                                                                <strong>Edition:</strong> 4</span>
+                                                                        </p>
+                                                                        <p>
+                                                                            <span class="received"><strong>Received date:</strong> 20th October</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="book">
+                                                                    <div class="book-img">
+                                                                        <img src="../../images/embedded.jpg" alt="book">
+                                                                    </div>
+                                                                    <div class="book-info">
+                                                                        <p class="name">Embedded System Design: A Unified Hardware / Software
+                                                                            Introduction
+                                                                        </p>
+                                                                        <p>
+                                                                            <span class="author">
+                                                                                <strong>Authors:</strong> Tony Givargis Frank Vahid
+                                                                            </span> |
+                                                                            <span class="published">
+                                                                                <strong>Published Date:</strong> 2006</span> |
+                                                                            <span class="edition">
+                                                                                <strong>Edition:</strong> 2</span>
+                                                                        </p>
+                                                                        <p>
+                                                                                <span class="received"><strong>Received date:</strong> 20th October</span>
+                                                                            </p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="book">
+                                                                    <div class="book-img">
+                                                                        <img src="../../images/computerNetwork.jpg" alt="book">
+                                                                    </div>
+                                                                    <div class="book-info">
+                                                                        <p class="name">Computer Networks</p>
+                                                                        <p>
+                                                                            <span class="author">
+                                                                                <strong>Author:</strong> Tanenbaum </span> |
+                                                                            <span class="published">
+                                                                                <strong>Published Date:</strong> 2013</span> |
+                                                                            <span class="edition">
+                                                                                <strong>Edition:</strong> 5</span>
+                                                                        </p>
+                                                                        <p>
+                                                                                <span class="received"><strong>Received date:</strong> 20th October</span>
+                                                                            </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
                             </div>
 
-                            <div id="leftPanel-menu">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="newEntries.html" class="btn btn-primary">New Entries</a>
-                                    </li>
-                                    <li>
-                                        <a href="updateBook.html" class="btn btn-primary">Update Book</a>
-                                    </li>
-                                    <li>
-                                        <a href="issueBook.html" class="btn btn-primary">Issue Book</a>
-                                    </li>
-                                    <li>
-                                        <a href="enquiry.html" class="btn btn-primary">Enquiry</a>
-                                    </li>
-                                    <li>
-                                        <a href="history.html" class="btn btn-primary">History</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../index.html" class="btn btn-primary">Log out</a>
-                                    </li>
-                                </ul>
+                            <!-- USER 2 -->
+                            <div class="user">
+                                <div class="user-img">
+                                    <img src="../../images/nabin.jpg" alt="user">
+                                </div>
+                                <div class="user-info">
+                                    <p class="name">Nabin Jaiswal</p>
+                                    <p>
+                                        <span class="degree">B.Tech</span> |
+                                        <span class="year-branch">Third Year CSE</span> |
+                                        <span class="sem">VI Sem</span> |
+                                        <span class="scholarNo">151112004</span>
+                                    </p>
+                                    <p>
+                                        <span class="booksTaken">
+                                            <strong>Books Taken:</strong> 5</span> |
+                                        <span class="lastVisited">
+                                            <strong>Last Visited date: </strong>27th January 2018</span>
+                                    </p>
+
+                                </div>
+
+
+                                <div class="actions">
+                                    <button class="btn btn-warning">More Info</button>
+
+                                </div>
+                            </div>
+
+
+                            <div class="buttons">
+                                <button class="btn btn-primary" onclick="history.go(-1)">BACK</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-10">
-                        <div id="right-panel">
-                            
-                        </div>
-                    </div>
-                
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- jQuery -->
-    <script src="../../js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="../../js/jquery.js"></script>
 
-    <!-- BOOTSTRAP JS -->
-    <script src="../../js/bootstrap.min.js"></script>
+        <!-- BOOTSTRAP JS -->
+        <script src="../../js/bootstrap.min.js"></script>
 
-    <!-- CUSTOM JS -->
-    <script src="../../js/myscripts.js"></script>
+        <!-- CUSTOM JS -->
+        <script src="../../js/myscripts.js"></script>
 </body>
 
 </html>
