@@ -359,7 +359,33 @@ input[type="reset"],
 
 }
 
+/* STUDENT SEARCH DATABASE */
+#searchDatabase .modal-dialog{
+    max-width: 60%;
+}
+#searchDatabase #right-panel .users-review .user .img-holder img{
+    width: 80px;
+    border-radius: 50%;
+}
+#searchDatabase #right-panel .users-review .user{
+    display: flex;
+    border:1px solid #e6e6e6;
+    padding:10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#searchDatabase #right-panel .users-review .user .info{
+    text-align: center;
+}
 
+#searchDatabase #right-panel .users-review .user p{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+#searchDatabase #right-panel .users-review .user .review-text{
+    font-style: italic;
+    margin-left: 10px;
+}
 /* RESPONSIVENESS */
 
 @media(min-width: 767px){

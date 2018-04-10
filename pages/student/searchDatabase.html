@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library Management System</title>
+
+    <!-- Bootrap Framework -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+
+    <!-- Bootswatch Framework -->
+    <link rel="stylesheet" href="../../css/bootswatch.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <!-- FONTAWESOME -->
+    <script src="../../js/fontawesome-all.js"></script>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <img src="../../images/logo.png" alt="logo">
+                        <a class="navbar-brand" href="#">&nbsp; LIBRARY MANAGEMENT SYSTEM</a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="searchDatabase">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h2 class="title">SEARCH DATABASE</h2>
+
+                </div>
+                <div class="col-sm-2">
+                    <div id="left-panel">
+                        <div id="student-portal">
+                            <div class="img-holder">
+                                <img src="../../images/nabinjaiswal.jpg" alt="User">
+                            </div>
+                            <span class="name">Nabin Jaiswal</span>
+                            <br>
+                            <span class="branch">B.Tech ECE</span>
+                            <br>
+                            <span class="year">Final Year</span>
+                            <br>
+                            <span class="scholarNo">141114132</span>
+                            <br>
+
+                        </div>
+
+                        <div id="leftPanel-menu">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="searchDatabase.html" class="btn btn-primary">Search Database</a>
+                                </li>
+                                <li>
+                                    <a href="setRemainder.html" class="btn btn-primary">Set Remainder</a>
+                                </li>
+
+                                <li>
+                                    <a href="history.html" class="btn btn-primary">History</a>
+                                </li>
+                                <li>
+                                    <a href="review.html" class="btn btn-primary">Review</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../index.html" class="btn btn-primary">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+                    <div id="right-panel">
+                        <div id="searchBook">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Type to search for availability of books in the library................">
+                            </div>
+                        </div>
+
+                        <div id="bookList">
+                            <!-- BOOK 1 -->
+                            <div class="book">
+                                <div class="book-img">
+                                    <img src="../../images/dip.jpg" alt="book">
+                                </div>
+                                <div class="book-info">
+                                    <p class="name">Digital Image Processing</p>
+                                    <p>
+                                        <span class="author">
+                                            <strong>Author:</strong> Gonzalez </span> |
+                                        <span class="published">
+                                            <strong>Published Date:</strong> 2016</span> |
+                                        <span class="edition">
+                                            <strong>Edition:</strong> 3</span>
+                                    </p>
+                                    <p>
+                                        <span class="status">
+                                            <strong>Status:</strong>
+                                            <span class="text-success">Available</span>
+                                        </span> |
+                                        <span class="count">
+                                            <strong>Count:</strong> 5</span>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#review-dip">Read Review</button>
+
+                                    <!-- REVIEW MODAL -->
+                                    <div id="review-dip" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <h4 class="modal-title">Review by Students</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="book">
+                                                        <div class="book-img">
+                                                            <img src="../../images/dip.jpg" alt="book">
+                                                        </div>
+                                                        <div class="book-info">
+                                                            <p class="name">Digital Image Processing</p>
+                                                            <p>
+                                                                <span class="author">
+                                                                    <strong>Author:</strong> Gonzalez </span> |
+                                                                <span class="published">
+                                                                    <strong>Published Date:</strong> 2016</span> |
+                                                                <span class="edition">
+                                                                    <strong>Edition:</strong> 3</span>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="users-review">
+                                                        <div class="title">Some of the reviews by students:</div>
+
+                                                        <div class="user">
+                                                            <div class="info">
+                                                                <div class="img-holder">
+                                                                    <img src="../../images/rajat.jpg" alt="user">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="name text-success">Rajat Sirohi</p>
+                                                                    <p class="branch-year">ECE Final Year</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat ut saepe,
+                                                                doloremque fugit magnam deleniti nulla illo a est neque distinctio
+                                                                id ex.
+                                                            </div>
+                                                        </div>
+                                                        <div class="user">
+                                                            <div class="info">
+                                                                <div class="img-holder">
+                                                                    <img src="../../images/aakash.jpg" alt="user">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="name text-success">Aakash Poudel</p>
+                                                                    <p class="branch-year">ECE Final Year</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat ut saepe,
+                                                                doloremque fugit magnam deleniti nulla illo a est neque distinctio
+                                                                id ex. Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat
+                                                                ut saepe, doloremque fugit magnam deleniti nulla illo a est
+                                                                neque distinctio id ex.
+                                                            </div>
+                                                        </div>
+                                                        <div class="user">
+                                                            <div class="info">
+                                                                <div class="img-holder">
+                                                                    <img src="../../images/sakendra.jpg" alt="user">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="name text-success">Sakendra Komre</p>
+                                                                    <p class="branch-year">ECE Final Year</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat ut saepe,
+                                                                doloremque fugit magnam deleniti nulla illo a est neque distinctio
+                                                                id ex. Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat
+                                                                ut saepe, doloremque fugit magnam deleniti nulla illo a est
+                                                                neque distinctio id ex.
+                                                            </div>
+                                                        </div>
+                                                        <div class="user">
+                                                            <div class="info">
+                                                                <div class="img-holder">
+                                                                    <img src="../../images/mukul.jpg" alt="user">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="name text-success">Mukul Ratnakar</p>
+                                                                    <p class="branch-year">ECE Final Year</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam debitis nesciunt sapiente nobis ad placeat ut saepe,
+                                                                doloremque fugit magnam deleniti nulla illo a est neque distinctio
+                                                                id ex.
+                                                            </div>
+                                                        </div>                                                       
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOOK 2 -->
+                            <div class="book">
+                                <div class="book-img">
+                                    <img src="../../images/embedded.jpg" alt="book">
+                                </div>
+                                <div class="book-info">
+                                    <p class="name">Embedded System Design: A Unified Hardware / Software Introduction</p>
+                                    <p>
+                                        <span class="author">
+                                            <strong>Authors:</strong> Tony Givargis Frank Vahid </span> |
+                                        <span class="published">
+                                            <strong>Published Date:</strong> 2006</span> |
+                                        <span class="edition">
+                                            <strong>Edition:</strong> 2</span>
+                                    </p>
+                                    <p>
+                                        <span class="status">
+                                            <strong>Status:</strong>
+                                            <span class="text-danger">Unavailable</span>
+                                        </span> |
+                                        <span class="count">
+                                            <strong>Count:</strong> 0</span>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-warning">Read Review</button>
+                                </div>
+                            </div>
+                            <!-- BOOK 3 -->
+                            <div class="book">
+                                <div class="book-img">
+                                    <img src="../../images/acs.jpg" alt="book">
+                                </div>
+                                <div class="book-info">
+                                    <p class="name">Advance Control Systems</p>
+                                    <p>
+                                        <span class="author">
+                                            <strong>Author:</strong> Dr. Sarkar B.N</span> |
+                                        <span class="published">
+                                            <strong>Published Date:</strong> 2015</span> |
+                                        <span class="edition">
+                                            <strong>Edition:</strong> 4</span>
+                                    </p>
+                                    <p>
+                                        <span class="status">
+                                            <strong>Status:</strong>
+                                            <span class="text-success">Available</span>
+                                        </span> |
+                                        <span class="count">
+                                            <strong>Count:</strong> 7</span>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                        <button class="btn btn-warning">Read Review</button>
+                                    </div>
+                            </div>
+                            <!-- BOOK 4 -->
+
+                            <div class="book">
+                                <div class="book-img">
+                                    <img src="../../images/antenna.jpg" alt="book">
+                                </div>
+                                <div class="book-info">
+                                    <p class="name">Antenna Theory: Analysis and Design</p>
+                                    <p>
+                                        <span class="author">
+                                            <strong>Author:</strong> Constantine A. Balanis </span> |
+                                        <span class="published">
+                                            <strong>Published Date:</strong> 2009</span> |
+                                        <span class="edition">
+                                            <strong>Edition:</strong> 3</span>
+                                    </p>
+                                    <p>
+                                        <span class="status">
+                                            <strong>Status:</strong>
+                                            <span class="text-danger">Unavailable</span>
+                                        </span> |
+                                        <span class="count">
+                                            <strong>Count:</strong> 0</span>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                        <button class="btn btn-warning">Read Review</button>
+                                    </div>
+                            </div>
+
+                            <!-- BOOK 5 -->
+                            <div class="book">
+                                <div class="book-img">
+                                    <img src="../../images/computerNetwork.jpg" alt="book">
+                                </div>
+                                <div class="book-info">
+                                    <p class="name">Computer Networks</p>
+                                    <p>
+                                        <span class="author">
+                                            <strong>Author:</strong> Tanenbaum </span> |
+                                        <span class="published">
+                                            <strong>Published Date:</strong> 2013</span> |
+                                        <span class="edition">
+                                            <strong>Edition:</strong> 5</span>
+                                    </p>
+                                    <p>
+                                        <span class="status">
+                                            <strong>Status:</strong>
+                                            <span class="text-success">Available</span>
+                                        </span> |
+                                        <span class="count">
+                                            <strong>Count:</strong> 3</span>
+                                    </p>
+                                </div>
+                                <div class="actions">
+                                        <button class="btn btn-warning">Read Review</button>
+                                    </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="../../js/myscripts.js"></script>
+</body>
+
+</html>
