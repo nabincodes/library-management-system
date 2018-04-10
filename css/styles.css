@@ -119,6 +119,7 @@
 }
 #userRegistration .buttons input,
 #userRegistration .buttons button, 
+.tab-content .buttons button,
 input[type="submit"], 
 input[type="reset"],
 #password-reset button,
