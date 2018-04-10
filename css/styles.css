@@ -282,6 +282,38 @@ input[type="reset"],
     font-weight: bold;
 }
 
+/* BOOK HISTORY */
+#bookHistory h3{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#bookHistory .date ul{
+    margin-left:40px;
+}
+
+#bookHistory .date ul li:before{
+    content: '✓';
+    font-weight: bolder;
+    margin-right: 5px;
+
+}
+
+#bookHistory .card-header{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#bookHistory .card-body ul li:before{
+    content: '✓';
+    font-weight: bolder;
+    margin-right: 5px;
+}
+#bookHistory .card-body ul li{
+    font-size: 1.2em;
+}
+#bookHistory .card-body ul li span{
+    font-weight: bold;
+    color: #18bc9c;
+}
 
 
 
