@@ -123,7 +123,8 @@
 input[type="submit"], 
 input[type="reset"],
 #password-reset button,
-#right-panel .buttons button{
+#right-panel .buttons button,
+#right-panel .searchButton{
     padding: 10px 50px;
     color: #fff;
     text-transform: uppercase;
@@ -177,6 +178,12 @@ input[type="reset"],
 }
 #leftPanel-menu li:last-child{
     margin-top:150px;
+}
+
+#searchBook .form-group .form-control{
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
 }
 
 /* RIGHT PANEL */
