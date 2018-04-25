@@ -80,76 +80,122 @@
                             <div class="form-group">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" name="userType" id="employee" value="employee" checked="" type="radio"> Employee
+                                        <input class="form-check-input" name="userType" id="employee" value="employee"   type="radio" onclick="showEmployee()" checked> Employee
                                     </label>
                        
                                     <label class="form-check-label">
-                                        <input class="form-check-input" name="userType" id="student" value="student" type="radio"> Student
+                                        <input class="form-check-input" name="userType" id="student" value="student" type="radio" onclick="showStudent()"> Student
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <input class="form-control" type="number" name="scholarno" placeholder="Scholar Number" required minlength="9" maxlength="9">
-                            </div>
+                            <!-- EMPLOYEE REGISTRATION -->
 
+                            <div id="employee-form">
+                                
+                                    <div class="form-group">
+                                            <input class="form-control" type="number" name="scholarno" placeholder="Employee ID" required minlength="9" maxlength="9">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="firstname" placeholder="First Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="lastname" placeholder="Last Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="number" name="contact" placeholder="Contact Number" required maxlength="11">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="profilePic">Upload your Image</label>
+                                            <input type="file"  id="profilePic" class="form-control"> 
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="password" name="password" id="password" placeholder="Your Password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+                                        </div>
+                                    </div>
+        
+                                    <!-- END OF EMPLOYEE REGISTRATION -->
+
+                                    <!-- STUDENT REGISTRATION FORM -->
+                            <div id="student-form">
+                                
                             <div class="form-group">
-                                <input class="form-control" type="text" name="firstname" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="lastname" placeholder="Last Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" name="email" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="number" name="contact" placeholder="Contact Number" required maxlength="11">
-                            </div>
-                            <div class="form-group">
-                                    <select name="degree" class="form-control" id="degree" required>
-                                        <option value="degree">Select Your Course</option>
-                                        <option value="btech">B.Tech</option>
-                                        <option value="mtech">M.Tech</option>
-                                        <option value="mba">MBA</option>
-                                        <option value="phd">Ph.d</option>                                       
+                                    <input class="form-control" type="number" name="scholarno" placeholder="Scholar Number" required minlength="9" maxlength="9">
+                                </div>
+    
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="firstname" placeholder="First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="lastname" placeholder="Last Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" name="contact" placeholder="Contact Number" required maxlength="11">
+                                </div>
+                                <div class="form-group">
+                                        <select name="degree" class="form-control" id="degree" required>
+                                            <option value="degree">Select Your Course</option>
+                                            <option value="btech">B.Tech</option>
+                                            <option value="mtech">M.Tech</option>
+                                            <option value="mba">MBA</option>
+                                            <option value="phd">Ph.d</option>                                       
+                                        </select>
+                                    </div>
+                                <div class="form-group">
+                                    <select name="branch" class="form-control" id="branch" required>
+                                        <option value="branch">Select Your Branch</option>
+                                        <option value="ECE">ECE</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MSME">MSME</option>
+                                        <option value="chemical">Chemical</option>
+                                        <option value="metallurgy">metallurgy</option>
+                                        <option value="civil">Civil</option>
+                                        <option value="electrical">Electrical</option>
+                                        <option value="planning">Planning</option>
+                                        <option value="architecture">Architecture</option>
                                     </select>
                                 </div>
-                            <div class="form-group">
-                                <select name="branch" class="form-control" id="branch" required>
-                                    <option value="branch">Select Your Branch</option>
-                                    <option value="ECE">ECE</option>
-                                    <option value="CSE">CSE</option>
-                                    <option value="ME">ME</option>
-                                    <option value="MSME">MSME</option>
-                                    <option value="chemical">Chemical</option>
-                                    <option value="metallurgy">metallurgy</option>
-                                    <option value="civil">Civil</option>
-                                    <option value="electrical">Electrical</option>
-                                    <option value="planning">Planning</option>
-                                    <option value="architecture">Architecture</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="semester" class="form-control" id="semester" required>
-                                    <option value="semester">Select Your Semester</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="password" name="password" id="password" placeholder="Your Password" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
-                            </div>
+                                <div class="form-group">
+                                    <select name="semester" class="form-control" id="semester" required>
+                                        <option value="semester">Select Your Semester</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profilePic">Upload your Image</label>
+                                    <input type="file"  id="profilePic" class="form-control"> 
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="password" id="password" placeholder="Your Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+                                </div>
+                            </div> 
+                            <!-- END OF STUDENT REGISTRATION -->
+
+                            
 
                             <div class="buttons">
                                 <input class="btn btn-primary" type="submit" value="Submit">
